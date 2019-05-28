@@ -1,2 +1,3 @@
 'use strict';
-var money = 
+var money = prompt("Ваш бюджет на месяц?");
+var time = 
