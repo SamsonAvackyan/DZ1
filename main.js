@@ -116,16 +116,10 @@ checkSavings();
 
 function chooseOptExpenses() {
   for (let i = 1; i <=3; i++) {
-    let a = prompt("Статья необязательных расходов?", '');
-        
-
-    if(typeof(a)=== 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
-      console.log("done");
-      appData.optionalExpenses = i;
-    }else {
-      console.log("bad result");
-      i--;
+    let questionOptExpenses = prompt("Статья необязательных расходов?");
+        appData.optionalExpenses[i] = questionOptExpenses;
+        console.log(appData.optionalExpenses);
     }
-  }
+  
 }
 chooseOptExpenses();
